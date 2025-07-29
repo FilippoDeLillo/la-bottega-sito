@@ -1,39 +1,308 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>La Bottega di Lucca</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Bottega di Lucca - Enoteca, Vino Sfuso & Distillati</title>
+    <meta name="description" content="La Bottega di Lucca - Enoteca tradizionale con vino sfuso, birre artigianali, distillati e liquori. Tradizione e qualità nel cuore di Lucca.">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div><strong>La Bottega di Lucca</strong></div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Chi siamo</a>
-      <a href="#">Prodotti</a>
-      <a href="#">Shop</a>
-      <a href="#">Contatti</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="wine-icon">🍷</span>
+                <span>La Bottega di Lucca</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#vino-sfuso" class="nav-link">Vino Sfuso</a>
+                <a href="#bollicine" class="nav-link">Bollicine & Birra</a>
+                <a href="#distillati" class="nav-link">Distillati</a>
+                <a href="#shop" class="nav-link">Shop</a>
+                <a href="#contatti" class="nav-link">Contatti</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <section class="hero">
-    <h1>Tradizione, Qualità, Toscana</h1>
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">La Bottega di Lucca</h1>
+            <p class="hero-subtitle">Enoteca tradizionale nel cuore di Lucca</p>
+            <p class="hero-description">Scopri la nostra selezione di vini sfusi, birre artigianali, distillati pregiati e liquori. Tradizione e qualità in ogni bottiglia.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Scopri i Nostri Vini</button>
+                <button class="btn btn-secondary">Visita il Negozio</button>
+            </div>
+            <div class="hero-info">
+                <div class="info-item">
+                    <span class="info-icon">📍</span>
+                    <span>Via Roma 123, Lucca</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">🕒</span>
+                    <span>Lun-Sab 9:00-19:30</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section class="intro">
-    <h2>Benvenuti nella Bottega di Lucca</h2>
-    <p>
-      Dal cuore della Toscana, un negozio che unisce la passione per i sapori autentici e i prodotti di qualità.
-      La Bottega di Lucca è sinonimo di tradizione, gusto e accoglienza. Ogni prodotto racconta una storia, ogni visita è un'esperienza.
-    </p>
-    <a class="cta" href="#">Scopri i nostri prodotti</a>
-  </section>
+    <!-- Vino Sfuso Section -->
+    <section id="vino-sfuso" class="vino-sfuso">
+        <div class="container">
+            <div class="section-header">
+                <h2>Il Nostro Vino Sfuso</h2>
+                <p>18 varietà di vino sfuso Bianco e Rosso, Toscano, Veneto e delle colline lucchesi</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Sistema ad Azoto</h3>
+                    <p>Conservazione perfetta con sistema innovativo</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏭</div>
+                    <h3>Silos in Acciaio</h3>
+                    <p>Moderni silos d'acciaio per qualità garantita</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🍇</div>
+                    <h3>18 Varietà</h3>
+                    <p>Ampia selezione di vini locali e nazionali</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3>Qualità Garantita</h3>
+                    <p>Controllo qualità su ogni litro venduto</p>
+                </div>
+            </div>
 
-  <footer>
-    &copy; 2025 La Bottega di Lucca - Tutti i diritti riservati
-  </footer>
+            <div class="wine-selection">
+                <h3>Scopri le Nostre Varietà</h3>
+                <div class="wine-buttons">
+                    <button class="wine-btn active" data-wine="chianti">Chianti Classico</button>
+                    <button class="wine-btn" data-wine="vermentino">Vermentino</button>
+                    <button class="wine-btn" data-wine="sangiovese">Sangiovese</button>
+                    <button class="wine-btn" data-wine="pinot">Pinot Grigio</button>
+                </div>
+                <div class="wine-details" id="wine-details">
+                    <h4>Chianti Classico DOCG</h4>
+                    <p><strong>Regione:</strong> Toscana</p>
+                    <p><strong>Colore:</strong> Rosso rubino intenso</p>
+                    <p><strong>Note:</strong> Bouquet fruttato con sentori di ciliegia e spezie dolci</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bollicine Section -->
+    <section id="bollicine" class="bollicine">
+        <div class="container">
+            <div class="section-header">
+                <h2>Bollicine & Birre Artigianali</h2>
+                <p>Selezione curata di spumanti, prosecchi e birre artigianali di qualità</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-icon">🥂</div>
+                    <h3>Spumanti</h3>
+                    <p>Franciacorta, Trentodoc, metodo classico</p>
+                    <ul>
+                        <li>Franciacorta DOCG</li>
+                        <li>Trentodoc Riserva</li>
+                        <li>Metodo Classico</li>
+                    </ul>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🍾</div>
+                    <h3>Prosecchi</h3>
+                    <p>Valdobbiadene DOCG, Conegliano</p>
+                    <ul>
+                        <li>Valdobbiadene DOCG</li>
+                        <li>Prosecco di Conegliano</li>
+                        <li>Prosecco Rosé</li>
+                    </ul>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🍺</div>
+                    <h3>Birre Artigianali</h3>
+                    <p>Selezione di birrifici locali e nazionali</p>
+                    <ul>
+                        <li>IPA Artigianali</li>
+                        <li>Lager Premium</li>
+                        <li>Birre Stagionali</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Distillati Section -->
+    <section id="distillati" class="distillati">
+        <div class="container">
+            <div class="section-header">
+                <h2>Distillati & Liquori</h2>
+                <p>Gin, vodka, cognac, armagnac, rum agricoli e whisky di prestigio</p>
+            </div>
+            
+            <div class="spirits-grid">
+                <div class="spirit-category">
+                    <h3>Gin Premium</h3>
+                    <p>Selezione di gin artigianali e premium</p>
+                </div>
+                <div class="spirit-category">
+                    <h3>Whisky & Bourbon</h3>
+                    <p>Scotch, Irish, American whiskey</p>
+                </div>
+                <div class="spirit-category">
+                    <h3>Cognac & Armagnac</h3>
+                    <p>Distillati francesi di alta qualità</p>
+                </div>
+                <div class="spirit-category">
+                    <h3>Rum & Vodka</h3>
+                    <p>Rum agricoli e vodka premium</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop" class="shop">
+        <div class="container">
+            <div class="section-header">
+                <h2>Il Nostro Shop</h2>
+                <p>Acquista online i nostri prodotti selezionati</p>
+            </div>
+            
+            <div class="shop-filters">
+                <button class="filter-btn active" data-category="all">Tutti</button>
+                <button class="filter-btn" data-category="vino">Vini</button>
+                <button class="filter-btn" data-category="birra">Birre</button>
+                <button class="filter-btn" data-category="distillati">Distillati</button>
+            </div>
+
+            <div class="products-showcase">
+                <div class="product-item" data-category="vino">
+                    <div class="product-image">🍷</div>
+                    <h4>Chianti Classico</h4>
+                    <p>€8.50/litro</p>
+                    <button class="btn btn-small">Aggiungi</button>
+                </div>
+                <div class="product-item" data-category="birra">
+                    <div class="product-image">🍺</div>
+                    <h4>IPA Artigianale</h4>
+                    <p>€4.20/bottiglia</p>
+                    <button class="btn btn-small">Aggiungi</button>
+                </div>
+                <div class="product-item" data-category="distillati">
+                    <div class="product-image">🥃</div>
+                    <h4>Gin Premium</h4>
+                    <p>€35.00/bottiglia</p>
+                    <button class="btn btn-small">Aggiungi</button>
+                </div>
+                <div class="product-item" data-category="vino">
+                    <div class="product-image">🍾</div>
+                    <h4>Prosecco DOCG</h4>
+                    <p>€12.00/bottiglia</p>
+                    <button class="btn btn-small">Aggiungi</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contatti" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contatti & Orari</h2>
+                <p>Vieni a trovarci nel nostro negozio nel centro di Lucca</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Informazioni</h3>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <strong>Indirizzo</strong>
+                            <p>Via Roma 123<br>55100 Lucca (LU)</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <strong>Telefono</strong>
+                            <p>+39 0583 123456</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <div>
+                            <strong>Email</strong>
+                            <p>info@labottegadilucca.it</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="opening-hours">
+                    <h3>Orari di Apertura</h3>
+                    <div class="hours-list">
+                        <div class="hour-item">
+                            <span>Lunedì - Venerdì</span>
+                            <span>9:00 - 19:30</span>
+                        </div>
+                        <div class="hour-item">
+                            <span>Sabato</span>
+                            <span>9:00 - 19:30</span>
+                        </div>
+                        <div class="hour-item">
+                            <span>Domenica</span>
+                            <span>Chiuso</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>🍷 La Bottega di Lucca</h3>
+                    <p>Enoteca tradizionale nel cuore di Lucca dal 1985</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Collegamenti</h4>
+                    <a href="#home">Home</a>
+                    <a href="#vino-sfuso">Vino Sfuso</a>
+                    <a href="#bollicine">Bollicine</a>
+                    <a href="#distillati">Distillati</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contatti</h4>
+                    <p>Via Roma 123, Lucca</p>
+                    <p>+39 0583 123456</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 La Bottega di Lucca. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
